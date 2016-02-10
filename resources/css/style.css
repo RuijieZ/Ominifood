@@ -1,0 +1,463 @@
+/*
+  orange colour: #e67e22;
+*/
+
+
+/* ____________________________________________________________*/
+/*  Basic setup                                                */
+/* ____________________________________________________________*/
+
+* {
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+html {
+    background: #fff;
+    color:#555555;
+    font-family: 'Lato','Arial',sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+
+
+/* ____________________________________________________________*/
+/*  Reusable Content                                           */
+/* ____________________________________________________________*/
+h1,
+h2,
+h3 {
+    font-weight:300;
+    text-transform: uppercase;   
+}
+
+h1 {
+    margin-top:0;
+    margin-bottom:20px;
+    color:#fff;
+    font-size: 200%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size:180%;
+    word-spacing:2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size:110%;
+    margin-bottom:15px;
+}
+
+
+h2:after {
+    display: block;
+    height: 2px;
+    width:100px;
+    content:" ";
+    margin: 0 auto;
+    margin-top: 30px;
+    background-color: #e67e22;    
+}
+
+.box {
+    padding:1%;
+}
+
+.box p{
+    font-size:80%;
+    line-height:145%;
+}
+/*---------long-copy--------------*/
+.long-copy {
+    height:145%;
+    width:70%;
+    margin-left:15%;
+}
+
+
+/*-----------Icons----------------*/
+.icon-big {
+    font-size:350%;
+    display:block;
+    color:#e67e22;
+}
+
+
+/*---------Buttons------------- */
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 10px;
+    font-weight: 300;
+    text-decoration:none;
+    border-radius: 200px;
+    transition: background-color 0.2s， color 0.2s, border 0.2;
+}
+
+.btn-full:link,
+.btn-full:visited{
+    background-color: #e67e22;
+    border:  1px solid #e67e22;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+    border:  1px solid #e67e22;
+    color: #e67e22;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #cf6d17;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    border:  1px solid #e67e22;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border:  1px solid #e67e22;
+    color: #fff;
+}
+
+/* ____________________________________________________________*/
+/*  Component: Header                                          */
+/* ____________________________________________________________*/
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,0.7)) , url(img/hero.jpg);
+    background-size: cover;
+    background-position: center;  
+    height: 100vh;
+    background-attachment:fixed;
+}
+.hero-textbox {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-44%,-50%);
+}
+
+/*----------------logo------------------------------------------*/
+.logo {
+    height:100px;
+    width:auto;
+    float:left;
+    margin-top:20px;
+}
+
+/*----------------navigation------------------------------------*/
+.main-nav {
+    float:right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.main-nav li {
+    display:inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size:90%;
+    bordre-bottom: 2px solid transparent;
+    transition: 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #e67e22;
+    
+}
+
+/*-----------------features--------------------------------------*/
+section {
+    padding:80px 0;
+}
+
+.section-features .long-copy {
+    margin-bottom: 30px;
+} 
+
+/* ____________________________________________________________*/
+/*  Component: meals                                         */
+/* ____________________________________________________________*/
+
+.section-meal{
+    padding:0;
+}
+
+.meal-showcase {
+    list-style:none;
+    width:100%;
+}
+
+.meal-showcase li {
+    display:block;
+    float:left;
+    width:24.883%;
+}
+
+.meal-photo {
+    width: 100%;
+    margin:0;
+    overflow: hidden;
+    background-color:#000;
+}
+
+.meal-photo img {
+    opacity:0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.meal-photo img:hover {
+    transform: scale(1.03);
+    opacity:1.0;
+}
+
+.clearfix {zoom:1}
+.clearfix:after{
+    content: '.';
+    clear:both;
+    display:block;
+    height:0;
+    visibility: hidden;
+}
+/* ____________________________________________________________*/
+/*  Component: How it works                                        */
+/* ____________________________________________________________*/
+
+.section-steps {
+    background-color:#f4f0f0;
+}
+
+.steps-box {
+    margin-top:30px;
+}
+
+.steps-box:first-child {
+    text-align:right;
+    padding-right:3%
+}
+.steps-box:last-child {
+    padding-left:3%;
+}
+
+.app-screen {
+    width:40%;
+}
+
+.works-step {
+    margin-bottom:50px;
+}
+
+.works-step:last-of-type {
+    margin-bottom:100px;
+}
+
+.works-step div {
+    color:#e67e22;
+    border:2px solid #e67e22;
+    dispaly:inline;
+    border-radius:50%;
+    height:55px;
+    width:55px;
+    text-align:center;
+    font-size:150%;
+    float:left;
+    margin-right:25px;
+    padding:5px;
+}
+
+.btn-app img {
+    height: 50px;
+    width: auto;
+    margin:10px;    
+}
+
+
+/*****************cities********************/
+.section-cities {
+    margin-top:25px;
+}
+
+.city-photo-ul {
+    margin-top:30px;
+    list-style:none;
+}
+
+
+.hello {
+    width: 100%;
+    height:auto;
+    float:left;
+    display:inline-block;
+    margin-bottom: 20px;
+}
+
+.city-feature {
+    margin-bottom:5px;
+}
+
+
+.city-feature i {
+    color: #e67e22;
+    font-size: 120%;
+    display:inline-block;
+    text-align: center;
+    width:30px;
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top:-5px;
+    margin-right:10px;
+}
+
+.city-feature a:link,
+.city-feature a:visited {
+    text-decoration: none;
+    color:#e67e22;
+    border-bottom:2px solid #e67e22; 
+    padding;2px;
+}
+
+.city-feature a:hover,
+.city-feature a:active {
+   border-bottom: 2px solid transparent;
+    color:#555;
+}
+
+/*****************testimonials********************/
+.section-testimonials {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(/resources/css/img/back-customers.jpg);
+    color:#fff;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+blockquote {
+    padding:2%;
+    line-hetight:145%;
+    font-style:italic;
+    position: relative;
+    margin-top:40px;
+}
+
+blockquote:before {
+    content:"\201C";
+    font-size:400%;
+    display: block;
+    position: absolute;
+    top:-40px;
+    left:3px;
+   
+}
+
+cite {
+    display:block;
+    margin-top:25px;
+    font-size:90%;
+}
+
+cite img {
+    height:45px;
+    border-radius: 50%;
+    margin-right:10px;
+    vertical-align: middle;
+}
+
+
+/* ____________________________________________________________*/
+/*  Sign Up                                           */
+/* ____________________________________________________________*/
+
+
+.section-plans {
+    background-color: #f4f0f0;
+}
+
+.plan-box {
+    background-color: #fff;
+    border-radius:5px;
+    width:90%;
+    margin-left:5%;
+    box-shadow: 0 2px 2px #efefef;
+}
+.plan-box div {
+    padding:15px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.plan-box div:first-child {
+    background-color:#fcfcfc;
+    border-top-left-radius:5px;
+    border-top-left-radius:5px;
+}
+
+.plan-box div:last-child {
+    text-align: center;
+    border: none;
+}
+
+.plan-price {
+    font-size: 300%;
+    margin-bottom: 10px;
+    font-weight:100;
+    color: #e67e22;
+}
+
+.plan-price span {
+    font-size: 30%;
+    font-weight:100;
+}
+
+.plan-price-meal {
+    font-size:80%;
+}
+
+.plan-box ul {
+    list-style: none;
+}
+
+
+.plan-box ul li {
+    padding: 5px 0;
+}
+
+.plan-box ul li i {
+    color: #e67e22;
+    font-size: 120%;
+    display:inline-block;
+    text-align: center;
+    width:30px;
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top:-5px;
+    margin-right:10px;
+}
