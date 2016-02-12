@@ -319,7 +319,7 @@
                 <form method="post" action="#" class="contact-form">
                     <div class="row">
                         <div class="col span-1-of-3">
-                            <label>Name</label>
+                            <label for="name">Name</label>
                         </div>
                         <div class="col span-2-of-3">
                             <input type="text" name="name" id="name" placeholder="your name e.g John Smith" required>
@@ -327,7 +327,7 @@
                     </div>
                     <div class="row">
                         <div class="col span-1-of-3">
-                            <label>Email</label>
+                            <label for ="email">Email</label>
                         </div>
                         <div class="col span-2-of-3">
                             <input type="email" name="email" id="email" placeholder="your email" required>
@@ -335,7 +335,7 @@
                     </div>
                     <div class="row">
                         <div class="col span-1-of-3">
-                            <label>How did you find us?</label>
+                            <label for = "find-us">How did you find us?</label>
                         </div>
                         <div class="col span-2-of-3">
                             <select name="find-us" id="find-us">
@@ -348,15 +348,51 @@
                     </div>
                     <div class="row">
                         <div class="col span-1-of-3">
-                            <label>Newsletter?</label>
+                            <label for="news">Newsletter?</label>
                         </div>
                         <div class="col span-2-of-3">
                             <input type="checkbox" name="news" id="news" checked> Yes, please.
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Drop us a line</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <textarea name="message" placeholder="How do you feel"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>&nbsp;</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="submit" value ="send it">
+                        </div>
+                    </div>
                 </form>
             </div>
         </section>
+        
+        <footer>
+            <div class = "row">
+                <div class= "col span-1-of-2">
+                    <ul class="footer-nav">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">About us</a></li>
+                    </ul>    
+                </div>   
+                <div class= "col span-1-of-2">
+                
+                </div>    
+                
+            </class>
+        
+        
+        </footer>
         
     </body>
 
@@ -380,102 +416,3 @@ Drop us a line
 
 
 
-<!--
-        <section class= "section-cities">
-            <div class="row">
-                <h2>We're currently in these cities</h2>
-            </div>        
-            <div class="row">
-                <div class= "col span-1-of-4 city">
-                    <img src="resources/images/lisbon-3.jpg">
-                    <h3>Lisbon</h3>
-                     <ul>
-                        <li>1600+ happy eaters</li>
-                        <li>60+ top chefs</li>
-                        <li>@omnifood_lx</li>
-                    </ul>
-                </div>
-            </div> 
-            <div class="row">
-                <div class= "col span-1-of-4 city">
-                    <img src="resources/images/san-francisco.jpg">
-                    <h3>San Francisco</h3>
-                    <ul>
-                        <li>3700+ happy eaters</li>
-                        <li>160+ top chefs</li>
-                        <li>@omnifood_sf</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row">
-                <div class= "col span-1-of-4 city">
-                    <img src="resources/images/berlin.jpg">
-                    <h3>Berlin</h3>
-                    <ul class="city-list-status">
-                        <li>2300+ happy eaters</li>
-                        <li>110+ top chefs</li>
-                        <li>@omnifood_berlin</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row">
-                <div class= "col span-1-of-4 city">
-                    <img src="resources/images/london.jpg">
-                    <h3>London</h3>
-                    <ul class="city-list-status">
-                        <li>1200+ happy eaters</li>
-                        <li>50+ top chefs</li>
-                        <li>@omnifood_london</li>
-                    </ul>
-                </div>
-            </div>
-        </section>        
--->
-
-<!--
- <section class= "section-cities row">
-            <div class="row">
-                <h2>We're currently in these cities</h2>
-            </div>        
-            <div class="row city-photoes">
-                <ul class="city-photo-ul">
-                    <li class="col span-1-of-4">
-                        <img src="resources/images/lisbon-3.jpg">
-                        <h3>Lisbon</h3>
-                        <ul class="list2">
-                            <li>1600+ happy eaters</li>
-                            <li>60+ top chefs</li>
-                            <li>@omnifood_lx</li>
-                        </ul>
-                    </li>
-                    <li class="col span-1-of-4">
-                        <img src="resources/images/san-francisco.jpg">
-                        <h3>Lisbon</h3>
-                        <ul class="list2">
-                            <li>1600+ happy eaters</li>
-                            <li>60+ top chefs</li>
-                            <li>@omnifood_lx</li>
-                        </ul>
-                    </li>
-                    <li class="col span-1-of-4">
-                        <img src="resources/images/berlin.jpg">
-                        <h3>San Francis</h3>
-                        <ul class="list2">
-                            <li>1600+ happy eaters</li>
-                            <li>60+ top chefs</li>
-                            <li>@omnifood_lx</li>
-                        </ul>
-                    </li>
-                    <li class="col span-1-of-4">
-                        <img src="resources/images/london.jpg">
-                        <h3>London</h3>
-                        <ul class="list2">
-                            <li>1600+ happy eaters</li>
-                            <li>60+ top chefs</li>
-                            <li>@omnifood_lx</li>
-                        </ul>
-                    </li>
-                </ul>
-            
-            </div>
-        </section>-->
