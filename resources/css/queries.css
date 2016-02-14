@@ -69,8 +69,30 @@
         width: 100%;
         margin: 0 0 4% 0;
     }
+
     .main-nav {
         display: none;
+    }
+
+    .mobile-nav-icon {
+        display: inline-block;
+    }
+    
+    .main-nav {
+        float:left;
+        margin-left: 25px;
+        margin-top: 25px;
+        padding: 5px;
+    }
+    
+    .main-nav li {
+        display:block;
+    }
+    
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: 0;
     }
     
     h1 {
