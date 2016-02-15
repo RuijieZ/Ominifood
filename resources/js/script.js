@@ -65,4 +65,23 @@ $(document).ready(function() {
             icon.removeClass('ion-close-round');
     }        
     })
+    
+    /*Add google maps*/
+    var map = new GMaps({
+      div: '.map',
+      lat: 32.5200825,
+      lng: 120.58,
+        zoom:12
+       
+    });
+    
+    map.addMarker({
+      lat: 32.5200825,
+      lng: 120.4565628,
+      title: 'Haian',
+      infoWindow: {
+        content: '<p>Haian, where I spent most of my teenage years</p>'
+      }
+});
+    
 });
